@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="<wpdisplay msg=lang.code.name>">
+	<head>
+		<!-- resultY.html $Revision$ -->
+		<title><wpdisplay msg=result.success></title>
+		<wpdisplay file=head.html>
+		<style type="text/css">
+			<wpdisplay file=stylesheet.css>
+		</style>
+	</head>
+	<wpdisplay file=header.html default="<body><div class=main><div class=wrapper>">
+	
+				<h1><wpdisplay msg=resultY.name></h1>
+				
+				<wpdisplay item=banner default="">
+				
+				<wpdisplay payment=authentication-check contents=true>
+				
+				<wpdisplay msg=card.authenticationPromotion arg1="|msg=card.authentication.<wpdisplay payment=paymentType>" arg2="|msg=card.authenticationPromoURL.<wpdisplay payment=paymentType>" stylize=1.instr>
+				
+				<a href="<wpdisplay msg='card.authenticationPromoURL.<wpdisplay payment=paymentType>'>" target="_blank" title="<wpdisplay msg=newwindow.title>"><img src="<wpdisplay disp='card.authentication.<wpdisplay payment=paymentType>'>" style="width:81px; border:0px;" alt="<wpdisplay msg='card.authentication.<wpdisplay payment=paymentType>'>" /></a>
+			
+	<wpdisplay file=footer.html default="</div></div></body>">
+	
+</html>

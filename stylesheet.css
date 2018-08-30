@@ -1,0 +1,228 @@
+/* yus */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: #002469;
+	color: #333;
+	font-family: Roboto, Calibri, sans-serif;
+	font-size: 16px;
+	line-height: 1.8em;
+	text-align: center;
+}
+
+body {
+	background: #DCDCDC;
+}
+
+img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+[src="/images/wp/magic.gif"], td.one:empty {
+	display: none;/* Worldpay's systems haven't been updated since the 2000s, it seems */
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 100%;
+	text-align: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.left, .right {
+	float: left;
+	width: 48%;
+}
+
+.left {
+	margin: 0 4% 0 0;
+}
+
+a {
+	color: #006852;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* tables */
+
+table {
+	width: 100%;
+}
+
+td {
+	padding: 0.45em 0.675em;
+}
+
+td td {
+	padding: 0.45em 0;
+}
+
+/* forms */
+
+input, textarea, select, label {
+	display: inline-block;
+	font-family: Roboto, Calibri, sans-serif;
+	font-size: 16px;
+	line-height: 1.8em;
+	vertical-align: middle;
+}
+
+a, span, b {
+	vertical-align: middle;
+}
+
+label {
+	padding: 0.45em 0;
+}
+
+input, textarea, select {
+	border: 0.45em solid transparent;
+	border-width: 0.45em 0.675em;
+	outline: 1px solid #999;
+}
+
+select {
+	border-width: 0.45em 0.45em 0.45em 0.675em;
+}
+
+input:focus, textarea:focus, select:focus {
+	outline: 1px solid #002469;
+}
+
+input[type=image], input[type=image]:focus {
+	outline: none;
+}
+
+textarea {
+	height: 6.3em;
+	min-height: 6.3em;
+}
+
+/* header */
+
+.header, .footer {
+	background: #002469;
+	color: #FFF;
+}
+
+.header a {
+	color: #FFF;
+	color: rgba(255,255,255,0.8);
+}
+
+.header a:hover {
+	color: #FFF;
+}
+
+.header a:active {
+	color: rgba(255,255,255,0.6);
+}
+
+.header .right {
+	text-align: right;
+}
+
+.header .nav {
+	padding: 0.9em 0;
+}
+
+.header .nav a {
+	display: inline-block;
+	margin: 0 0.45em;
+	padding: 0 0.45em;
+}
+
+/* main */
+
+.main {
+	padding: 1.8em 0.9em;
+}
+
+.content {
+	background: #FFF;
+	padding: 0.9em 1.8em;
+}
+
+h1, h2 {
+	font-family: Roboto, Calibri, sans-serif;
+	font-size: 32px;
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 1.8em;
+}
+
+h2 {
+	font-size: 24px;
+	font-size: 1.5rem;
+	line-height: 1.8em;
+}
+
+.main td.width190 {
+	font-weight: 700;
+	width: 280px;
+}
+
+.main td.two {
+	background: none;
+}
+
+.main td.three {
+	color: #FFF;
+	padding: 0.45em 0.675em;
+}
+
+.main td.three + td.one {
+	padding: 0.45em 0.675em;
+}
+
+/* Attempt to undo Worldpay's godawful code */
+
+b {
+	font-weight: 400;
+}
+
+label span b {
+	font-size: 16px;
+}
+
+[style] {
+	background: none !important;
+	font-family: Roboto, Calibri, sans-serif !important;
+	font-size: 16px !important;
+}
+
+label[for="op-DPCancel"] {
+	padding: 0;
+}
+
+label[for="op-DPCancel"] span b {
+	font-size: 24px !important;
+	font-size: 1.5rem !important;
+	line-height: 1.8em !important;
+}
+
+.print_buttons + table tr:nth-child(4) {
+	display: none;
+}
+
+/* footer */
+
+.footer {
+	padding: 0.9em;
+}
+
+.footer span {
+	color: #FFF !important;
+}
